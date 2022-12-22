@@ -19,7 +19,7 @@ const HasilSchema = mongoose.Schema({
         type: Number,
         required: true
     },
-    is_redy: {
+    is_ready: {
         type: Boolean,
         required: true
     },

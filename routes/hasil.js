@@ -2,7 +2,6 @@ const express = require('express')
 const router = express.Router()
 const Hasil = require('../models/Hasil')
 const response = require('../config/response')
-const Hasil = require('../models/Hasil')
 const { id } = require('@hapi/joi/lib/base')
 
 // Create 
@@ -13,7 +12,7 @@ router.post('/', async(req, res) => {
         kode: req.body.kode,
         nama: req.body.nama,
         harga: req.body.harga,
-        is_redy: req.body.is_redy,
+        is_ready: req.body.is_ready,
         gambar: req.body.gambar,
         category: req.body.category,
     })
