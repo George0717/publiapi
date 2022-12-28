@@ -3,14 +3,14 @@ const mongoose = require('mongoose')
 
 const CategoriesSchema = mongoose.Schema({
     // Buat Schema data
+    id: {
+        type: Number,
+        required: true
+    },
     nama: {
         type: String,
         required: true
     },
-    id: {
-        type: Number,
-        required: true
-    }
 })
 
 

@@ -6,9 +6,8 @@ const Categories = require('../models/Categories')
 router.post('/', async(req, res) => {
     // tampung input mahasiswa 
     const categoriesPost = new Categories({
-        nama: req.body.nama,
         id: req.body.id,
-        
+        nama: req.body.nama,
     })
 
     try {
