@@ -3,7 +3,7 @@ const router = express.Router()
 const Categories = require('../models/Categories')
 
 // Create 
-router.get('/', async(req, res) => {
+router.post('/', async(req, res) => {
     // tampung input mahasiswa 
     const categoriesPost = new Categories({
         id: req.body.id,
