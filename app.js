@@ -17,13 +17,13 @@ app.use(cors())
 // (7) import routes
 const mahasiswaRoutes = require('./routes/mahasiswa')
 const dosenRoutes = require('./routes/dosen')
-const hasilRoutes = require('./routes/hasil')
+const hasilRoutes = require('./routes/categories')
 
 
 // (8) app.use (mendaftarkan middleware baru ke Express)
 app.use('/mahasiswa', mahasiswaRoutes)
 app.use('/dosen', dosenRoutes)
-app.use('/hasil', hasilRoutes)
+app.use('/categories', hasilRoutes)
 
 
 // (3) koneksi ke database mongodb
