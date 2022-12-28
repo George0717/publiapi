@@ -7,8 +7,8 @@ router.post('/', async(req, res) => {
     // tampung input mahasiswa 
     const categoriesPost = new Categories({
         nama: req.body.nama,
-        alamat: req.body.alamat,
-        npm: req.body.npm,
+        id: req.body.id,
+        
     })
 
     try {
