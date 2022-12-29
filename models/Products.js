@@ -1,6 +1,5 @@
 // (4) Buat Schema Mahasiswa
 const mongoose = require('mongoose')
-const Categories = require('./Categories')
 
 const ProductsSchema = mongoose.Schema({
     // Buat Schema data
@@ -29,14 +28,8 @@ const ProductsSchema = mongoose.Schema({
         required: true
     },
     category: {
-        id: {
             type: String,
-            Request: Categories
-        },
-        nama: {
-            type: String,
-            Request: Categories
-        },
+            required: true
     },
 })
 

@@ -5,7 +5,7 @@ const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const cors = require('cors')
 require('dotenv/config')
-require('dotenv').config({ path: 'string.env' });
+
 
 const quote = "cie berjalan"
 app.use(bodyParser.urlencoded({
@@ -17,14 +17,12 @@ app.use(cors())
 // (7) import routes
 const mahasiswaRoutes = require('./routes/mahasiswa')
 const dosenRoutes = require('./routes/dosen')
-const categoriesRoutes = require('./routes/categories')
 const productsRoutes = require('./routes/products')
 
 
 // (8) app.use (mendaftarkan middleware baru ke Express)
 app.use('/mahasiswa', mahasiswaRoutes)
 app.use('/dosen', dosenRoutes)
-app.use('/categories', categoriesRoutes)
 app.use('/products', productsRoutes)
 
 
