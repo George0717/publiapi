@@ -18,11 +18,20 @@ app.use(cors())
 const mahasiswaRoutes = require('./routes/mahasiswa')
 const dosenRoutes = require('./routes/dosen')
 const productsRoutes = require('./routes/products')
+const makananRoutes = require('./routes/makanan')
+const minumanRoutes = require('./routes/minuman')
+const cemilanRoutes = require('./routes/cemilan')
 
 
 // (8) app.use (mendaftarkan middleware baru ke Express)
 app.use('/mahasiswa', mahasiswaRoutes)
 app.use('/dosen', dosenRoutes)
+// Categories\
+app.use("/makanan", makananRoutes)
+app.use("/minuman", minumanRoutes)
+app.use("/cemilan", cemilanRoutes)
+
+// Products
 app.use('/products', productsRoutes)
 
 

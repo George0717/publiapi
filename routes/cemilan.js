@@ -1,25 +1,22 @@
 const express = require('express')
 const router = express.Router() 
 const response = require('../config/response')
-const Products = require('../models/Products')
+const Cemilan = require('../models/Cemilan')
+
+
 
 // Create 
 router.post('/', async(req, res) => {
     // tampung input mahasiswa 
-    const productsPost = new Products({
-        id: req.body.id,
-        kode: req.body.kode,
+    const cemilanPost = new Cemilan({
         nama: req.body.nama,
-        harga: req.body.harga,
-        is_ready: req.body.is_ready,
-        category: req.body.category,
     })
 
     try {
         // simpan data 
-        const products = await  productsPost.save()
+        const cemilan = await  cemilanPost.save()
         // response
-        res.json(products)
+        res.json(cemilan)
     } catch (error) {
         res.json({message: error})
     }
@@ -29,9 +26,9 @@ router.get('/',  async(req, res) => {
     // tampung input mahasiswa 
     try {
         // simpan data 
-        const products = await Products.find()
+        const cemilan = await Cemilan.find()
         // response
-        res.json(products)
+        res.json(minuman)
     } catch (error) {
         res.json({message: error})
     }
