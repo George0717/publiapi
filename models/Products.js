@@ -23,10 +23,6 @@ const ProductsSchema = mongoose.Schema({
         type: Boolean,
         required: true
     },
-    gambar: {
-        type: String,
-        required: true
-    },
     category: {
             type: String,
             required: true
