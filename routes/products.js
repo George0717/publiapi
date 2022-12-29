@@ -11,7 +11,6 @@ router.post('/', async(req, res) => {
         nama: req.body.nama,
         harga: req.body.harga,
         is_ready: req.body.is_ready,
-        gambar: req.body.gambar,
         category: req.body.category,
     })
 
