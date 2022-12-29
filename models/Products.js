@@ -25,12 +25,18 @@ const ProductsSchema = mongoose.Schema({
         required: true
     },
     gambar: {
-        type: Image,
+        type: String,
         required: true
     },
     category: {
-        id: Categories.id,
-        nama: Categories.nama
+        id: {
+            type: String,
+            Request: Categories
+        },
+        nama: {
+            type: String,
+            Request: Categories
+        },
     },
 })
 
