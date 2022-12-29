@@ -28,7 +28,7 @@ router.get('/',  async(req, res) => {
         // simpan data 
         const cemilan = await Cemilan.find()
         // response
-        res.json(minuman)
+        res.json(cemilan)
     } catch (error) {
         res.json({message: error})
     }

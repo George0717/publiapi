@@ -30,7 +30,6 @@ app.use('/dosen', dosenRoutes)
 app.use("/makanan", makananRoutes)
 app.use("/minuman", minumanRoutes)
 app.use("/cemilan", cemilanRoutes)
-
 // Products
 app.use('/products', productsRoutes)
 
