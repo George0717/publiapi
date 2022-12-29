@@ -20,4 +20,16 @@ router.post('/', async(req, res) => {
     }
 })
 
+router.get('/',  async(req, res) => {
+    // tampung input mahasiswa 
+    try {
+        // simpan data 
+        const categories = await Categories.find()
+        // response
+        res.json(categories)
+    } catch (error) {
+        res.json({message: error})
+    }
+})
+
 module.exports = router
