@@ -28,9 +28,9 @@ router.get('/',  async(req, res) => {
     // tampung input mahasiswa 
     try {
         // simpan data 
-        const makanan = await Makanan.find()
+        const food = await Food.find()
         // response
-        res.json(makanan)
+        res.json(food)
     } catch (error) {
         res.json({message: error})
     }
