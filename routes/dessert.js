@@ -6,14 +6,14 @@ const Dessert = require('../models/Dessert')
 
 // Create 
 router.post('/', async(req, res) => {
-    const deseertPost = new Dessert({
+    const dessertPost = new Dessert({
         nama: req.body.nama,
         harga: req.body.harga,
         gambar: req.body.gambar
     })
     try {
         // simpan data 
-        const dessert = await  dessertPost.save()
+        const dessert = await dessertPost.save()
         // response
         res.json(dessert)
     } catch (error) {
