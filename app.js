@@ -21,6 +21,9 @@ const productsRoutes = require('./routes/products')
 const makananRoutes = require('./routes/makanan')
 const minumanRoutes = require('./routes/minuman')
 const cemilanRoutes = require('./routes/cemilan')
+const foodRoutes = require('./routes/food')
+const drinkRoutes = require('./routes/drink')
+const dessertRoutes = require('./routes/dessert')
 
 
 // (8) app.use (mendaftarkan middleware baru ke Express)
@@ -30,8 +33,11 @@ app.use('/dosen', dosenRoutes)
 app.use("/makanan", makananRoutes)
 app.use("/minuman", minumanRoutes)
 app.use("/cemilan", cemilanRoutes)
-// Products
-app.use('/products', productsRoutes)
+// Isi Produk
+app.use('/food', foodRoutes)
+app.use('/drink', drinkRoutes)
+app.use('/dessert', dessertRoutes)
+
 
 
 // (3) koneksi ke database mongodb
