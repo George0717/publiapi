@@ -10,9 +10,11 @@ const FoodSchema = mongoose.Schema({
         required: true
     },
     gambar: {
-        type: URL,
+        type: String,
         required: true
     }
 })
 
 module.exports = mongoose.model('Food', FoodSchema)
+
+// 5 Item = Burger, Pizza, Ayam, Steak, Nasi Goreng

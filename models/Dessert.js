@@ -10,9 +10,11 @@ const DessertSchema = mongoose.Schema({
         required: true
     },
     gambar: {
-        type: URL,
+        type: String,
         required: true
     }
 })
 
 module.exports = mongoose.model('Dessert', DessertSchema)
+
+// 3 Dessert = Pancake, Ice Cream, Choco Cake

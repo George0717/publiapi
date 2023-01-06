@@ -10,9 +10,11 @@ const DrinkSchema = mongoose.Schema({
         required: true
     },
     gambar: {
-        type: URL,
+        type: String,
         required: true
     }
 })
 
 module.exports = mongoose.model('Drink', DrinkSchema)
+
+// 5 Drink = Coca - cola, Jus Alpokad, Es Teh, Kopi, Coklat
