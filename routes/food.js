@@ -10,6 +10,8 @@ router.post('/', async(req, res) => {
     // tampung input mahasiswa 
     const foodPost = new Food({
         nama: req.body.nama,
+        harga: req.body.harga,
+        gambar: req.body.gambar
     })
 
     try {

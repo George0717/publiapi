@@ -8,6 +8,8 @@ const Dessert = require('../models/Dessert')
 router.post('/', async(req, res) => {
     const deseertPost = new Dessert({
         nama: req.body.nama,
+        harga: req.body.harga,
+        gambar: req.body.gambar
     })
     try {
         // simpan data 
