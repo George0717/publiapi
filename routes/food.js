@@ -35,7 +35,7 @@ router.get('/',  async(req, res) => {
     }
 })
 // Update
-router.patch('/:foodID', async (req,res) => {
+router.put('/:foodID', async (req,res) => {
     const data = {
         name: req.body.name,
         harga: req.body.harga,
