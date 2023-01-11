@@ -1,6 +1,6 @@
-import mongoose from "mongoose";
+const mongoose = require('mongoose')
 
-const User = mongoose.Schema({
+const FoodSchema = mongoose.Schema({
     name: {
         type : String,
         required: true
@@ -15,4 +15,4 @@ const User = mongoose.Schema({
     },
 })
 
-export default mongoose.model('Food', Food)
+module.exports = mongoose.model('Food', FoodSchema)
