@@ -18,6 +18,7 @@ app.use(cors())
 const mahasiswaRoutes = require('./routes/mahasiswa')
 const dosenRoutes = require('./routes/dosen')
 const foodRoute = require('./routes/food')
+const drinkRoute = require('./routes/drink')
 
 
 
@@ -25,6 +26,7 @@ const foodRoute = require('./routes/food')
 app.use('/mahasiswa', mahasiswaRoutes)
 app.use('/dosen', dosenRoutes)
 app.use('/food',foodRoute)
+app.use('/drink', drinkRoute)
 
 
 
