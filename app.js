@@ -19,6 +19,7 @@ const mahasiswaRoutes = require('./routes/mahasiswa')
 const dosenRoutes = require('./routes/dosen')
 const foodRoute = require('./routes/food')
 const drinkRoute = require('./routes/drink')
+const dessertRoute = require('./routes/dessert')
 
 
 
@@ -27,6 +28,7 @@ app.use('/mahasiswa', mahasiswaRoutes)
 app.use('/dosen', dosenRoutes)
 app.use('/food',foodRoute)
 app.use('/drink', drinkRoute)
+app.use('/dessert', dessertRoute)
 
 
 
