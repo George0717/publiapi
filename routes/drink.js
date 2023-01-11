@@ -55,7 +55,7 @@ router.put('/:drinkID', async (req,res) => {
 // Delete
 router.delete('/:drinkID', async(req,res) => {
     try{
-        const drink = await Drink.deleteOne({_id: req.params.foodID})
+        const drink = await Drink.deleteOne({_id: req.params.drinkID})
         response(201, drink, "berhasil", res)
     }catch(error) {
         res.json({message: error})
