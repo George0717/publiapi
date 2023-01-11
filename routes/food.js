@@ -16,7 +16,7 @@ router.post('/', async(req, res) => {
         // simpan data 
         const food = await foodPost.save()
         // response
-        res.json(food)
+        // res.json(food)
         response(201, food, "berhasil", res)
     } catch (error) {
         res.json({message: error})
@@ -29,7 +29,7 @@ router.get('/',  async(req, res) => {
         // simpan data 
         const food = await Food.find()
         // response
-        res.json(food)
+        response(201, food, "berhasil", res)
     } catch (error) {
         res.json({message: error})
     }
@@ -46,7 +46,7 @@ router.patch('/:foodID', async (req,res) => {
         const food = await Food.updateOne({
             _id: req.params.foodID
         },data)
-        res.json(food)
+        response(201, food, "berhasil", res)
     }catch(error){
         req.json({message: error})
     }
@@ -56,7 +56,7 @@ router.patch('/:foodID', async (req,res) => {
 router.delete('/:foodID', async(req,res) => {
     try{
         const food = await Food.deleteOne({_id: req.params.foodID})
-        res.json(food)
+        response(201, food, "berhasil", res)
     }catch(error) {
         res.json({message: error})
     }
