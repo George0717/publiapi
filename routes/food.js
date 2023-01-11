@@ -16,7 +16,7 @@ router.post('/', async(req, res) => {
         // simpan data 
         const food = await foodPost.save()
         // response
-        // res.json(mahasiswa)
+        res.json(food)
         response(201, food, "berhasil", res)
     } catch (error) {
         res.json({message: error})

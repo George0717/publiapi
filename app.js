@@ -24,7 +24,6 @@ const foodRoute = require('./routes/food')
 // (8) app.use (mendaftarkan middleware baru ke Express)
 app.use('/mahasiswa', mahasiswaRoutes)
 app.use('/dosen', dosenRoutes)
-// Categories\
 app.use('/food',foodRoute)
 
 
