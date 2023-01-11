@@ -17,7 +17,7 @@ app.use(cors())
 // (7) import routes
 const mahasiswaRoutes = require('./routes/mahasiswa')
 const dosenRoutes = require('./routes/dosen')
-const foodRoute = require('./routes/foodRoute')
+const foodRoute = require('./routes/food')
 
 
 
@@ -25,7 +25,7 @@ const foodRoute = require('./routes/foodRoute')
 app.use('/mahasiswa', mahasiswaRoutes)
 app.use('/dosen', dosenRoutes)
 // Categories\
-app.use('/foodRoute',foodRoute)
+app.use('/food',foodRoute)
 
 
 
