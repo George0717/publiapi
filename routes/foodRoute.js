@@ -1,4 +1,4 @@
-import  express from "express";
+const express = require('express')
 import { getUsers, getFoodById, saveUser, UpdateFood, DeleteFood } from "../controller/foodController.js";
 
 const router = express.Router()
