@@ -54,10 +54,10 @@ router.put('/:dessertID', async (req,res) => {
 })
 
 // Delete
-router.delete('/:drinkID', async(req,res) => {
+router.delete('/:dessertID', async(req,res) => {
     try{
-        const drink = await Drink.deleteOne({_id: req.params.drinkID})
-        response(201, drink, "berhasil", res)
+        const dessert = await Dessert.deleteOne({_id: req.params.dessertID})
+        response(201, dessert, "berhasil", res)
     }catch(error) {
         res.json({message: error})
     }
